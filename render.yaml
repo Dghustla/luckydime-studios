@@ -1,0 +1,6 @@
+services:
+  - type: web
+    runtime: static
+    name: luckydime-studios
+    buildCommand: ""
+    staticPublishPath: ./public

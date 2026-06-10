@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Dime Studios | Small, sharp products for overlooked niches.</title>
+  <meta name="description" content="Small, sharp products for overlooked niches. If your problem is too small for the big companies, it is exactly the right size for us.">
+  <meta property="og:title" content="Lucky Dime Studios | Small, sharp products for overlooked niches.">
+  <meta property="og:description" content="Small, sharp products for overlooked niches. If your problem is too small for the big companies, it is exactly the right size for us.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luckydimestudios.com/">
+  <meta property="og:site_name" content="Lucky Dime Studios">
+  <meta property="og:image" content="https://luckydimestudios.com/brand/lucky-dime-studios-logo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#5C2D91">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23d7dbe0'/%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23868f9b' stroke-width='1.6' stroke-dasharray='1.8 1.5'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23868f9b' stroke-width='1'/%3E%3Ctext x='16' y='20.5' font-family='Arial,sans-serif' font-size='10' font-weight='700' text-anchor='middle' fill='%2316171c'%3E10%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FFFFFF;
+      --ink: #16171C;
+      --ink-soft: #3C3E45;
+      --silver: #8A93A0;
+      --silver-deep: #6E7884;
+      --silver-tint: #EDF0F3;
+      --purple: #5C2D91;
+      --teal: #2E9FB5;
+      --brand-grad: linear-gradient(90deg, #5C2D91, #2E9FB5);
+      --rule: rgba(22, 23, 28, 0.16);
+      --rule-strong: var(--ink);
+      --pad: clamp(1.25rem, 4vw, 3.5rem);
+      --measure: 34em;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      max-width: 84rem;
+      margin: 0 auto;
+      padding-left: var(--pad);
+      padding-right: var(--pad);
+    }
+
+    .mono {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    a { color: inherit; }
+
+    ::selection { background: var(--silver-tint); color: var(--ink); }
+
+    /* ---------- Masthead ---------- */
+    .masthead {
+      background-image: var(--brand-grad);
+      background-size: 100% 4px;
+      background-repeat: no-repeat;
+      background-position: top;
+      padding-top: 4px;
+      border-bottom: 1px solid var(--rule-strong);
+    }
+    .brand-logo { height: 2.4rem; width: auto; display: block; }
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+    }
+    .brand-mark { width: 1.5rem; height: 1.5rem; flex: none; }
+    .brand-name {
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .masthead-nav { display: none; gap: 1.75rem; }
+    .masthead-nav a {
+      text-decoration: none;
+      color: var(--ink-soft);
+    }
+    .masthead-nav a:hover { color: var(--ink); }
+    .masthead-domain { color: var(--silver-deep); display: none; }
+
+    @media (min-width: 760px) {
+      .masthead-nav { display: flex; }
+      .masthead-domain { display: block; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero { padding-top: clamp(3.5rem, 9vw, 7.5rem); padding-bottom: clamp(3rem, 7vw, 6rem); }
+    .kicker {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--silver-deep);
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    h1 {
+      font-size: clamp(2.85rem, 9.2vw, 8rem);
+      font-weight: 900;
+      line-height: 0.96;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+      max-width: 12.5em;
+    }
+    .hero-grid {
+      margin-top: clamp(2.25rem, 5vw, 4rem);
+      display: grid;
+      gap: 2.25rem;
+    }
+    .subhead {
+      font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+      line-height: 1.6;
+      color: var(--ink-soft);
+      max-width: var(--measure);
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+    }
+    .index-list { list-style: none; }
+    .index-list li { border-top: 1px solid var(--rule); }
+    .index-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .index-list a:hover .index-name { color: var(--purple); text-decoration: underline; text-underline-offset: 0.2em; }
+    .index-list a:focus-visible, .flagship-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+    .index-list .mono { color: var(--teal); }
+    .hero-logo { width: 100%; max-width: 21rem; height: auto; display: block; margin-bottom: 1.75rem; }
+
+    @media (min-width: 900px) {
+      .hero-grid { grid-template-columns: 7fr 4fr; gap: clamp(2rem, 6vw, 6rem); }
+      .index-list { border-bottom: 1px solid var(--rule); align-self: start; }
+    }
+
+    /* ---------- Section scaffolding ---------- */
+    section.bucket { border-top: 2px solid var(--rule-strong); }
+    .bucket-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.75rem 1.5rem;
+      padding-top: 1.4rem;
+    }
+    .bucket-no { color: var(--purple); }
+    .bucket-title {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .bucket-badge { margin-left: auto; }
+    .bucket-tagline {
+      margin-top: 1rem;
+      font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--ink-soft);
+      max-width: 30em;
+    }
+    .bucket-body { padding-top: clamp(2rem, 4vw, 3.25rem); padding-bottom: clamp(3rem, 6vw, 5.5rem); }
+    .bucket-copy {
+      color: var(--ink-soft);
+      max-width: var(--measure);
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      line-height: 1.65;
+    }
+    .bucket-copy + .flagship { margin-top: clamp(2rem, 4vw, 3rem); }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      border: 1px solid var(--silver);
+      color: var(--ink);
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      white-space: nowrap;
+      background: var(--paper);
+    }
+    .badge .dot {
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 50%;
+      background: var(--teal);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    .badge.lab .dot { animation: none; background: var(--silver); }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.8); }
+    }
+
+    /* ---------- Software / flagship ---------- */
+    .flagship {
+      display: grid;
+      gap: 1.5rem;
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+    }
+    .flagship-label { color: var(--silver-deep); }
+    .flagship-name {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .flagship-copy { color: var(--ink-soft); max-width: var(--measure); font-size: 1.05rem; }
+    .flagship-link {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.4em;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid var(--teal);
+      padding-bottom: 0.15em;
+      width: fit-content;
+      transition: border-color 140ms ease;
+    }
+    .flagship-link:hover { border-color: var(--purple); }
+    .flagship-link .arrow { font-weight: 400; color: var(--teal); }
+    .flagship-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+
+    @media (min-width: 900px) {
+      .flagship { grid-template-columns: 1fr 1.2fr 1fr; align-items: start; }
+      .flagship-meta { display: flex; flex-direction: column; gap: 1rem; }
+      .flagship-actions { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; }
+    }
+
+    /* ---------- Item grids (media, games) ---------- */
+    .items { display: grid; }
+    .item {
+      border-top: 1px solid var(--rule);
+      padding: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .item-topic { color: var(--silver-deep); }
+    .item-name {
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .item-desc { color: var(--ink-soft); max-width: 26em; }
+
+    @media (min-width: 760px) {
+      .items.cols-3 { grid-template-columns: repeat(3, 1fr); gap: 0 2.5rem; }
+      .items.cols-2 { grid-template-columns: repeat(2, 1fr); gap: 0 2.5rem; }
+    }
+
+    /* ---------- Launchpad ---------- */
+    .launchpad {
+      border-top: 2px solid var(--rule-strong);
+      background: linear-gradient(135deg, #F3EFF9 0%, #EBF6F8 100%);
+    }
+    .launchpad-inner {
+      display: grid;
+      gap: 2.5rem;
+      padding-top: clamp(3rem, 6vw, 5.5rem);
+      padding-bottom: clamp(3rem, 6vw, 5.5rem);
+    }
+    .launchpad h2 {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .launchpad-body {
+      margin-top: 1.25rem;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      line-height: 1.6;
+      color: var(--ink-soft);
+      max-width: 30em;
+    }
+    .pads { display: flex; align-items: center; gap: 1.25rem; margin-top: 1.75rem; }
+    .pad-slot { display: flex; align-items: center; gap: 0.55rem; color: var(--silver-deep); }
+    .pad-slot .pad-dot {
+      width: 0.85rem; height: 0.85rem; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: inset 0 0 0 2px #EBF6F8, 0 0 0 1px var(--teal);
+    }
+
+    /* Coin */
+    .coin-stage { display: flex; justify-content: flex-start; perspective: 900px; }
+    .coin {
+      width: clamp(9rem, 18vw, 13rem);
+      height: auto;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      animation: idleTilt 9s ease-in-out infinite alternate;
+      filter: drop-shadow(0 10px 18px rgba(22, 23, 28, 0.14));
+      border: 0;
+      background: none;
+      padding: 0;
+      display: block;
+    }
+    .coin svg { display: block; width: 100%; height: auto; }
+    .coin.flip { animation: flipOnce 0.9s cubic-bezier(0.3, 0.7, 0.3, 1); }
+    @keyframes idleTilt {
+      from { transform: rotateY(-14deg) rotateX(4deg); }
+      to   { transform: rotateY(14deg) rotateX(-4deg); }
+    }
+    @keyframes flipOnce {
+      from { transform: rotateY(0deg); }
+      to   { transform: rotateY(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .coin, .coin.flip, .badge .dot { animation: none !important; }
+      html { scroll-behavior: auto; }
+    }
+
+    @media (min-width: 900px) {
+      .launchpad-inner { grid-template-columns: 1.4fr 1fr; align-items: center; }
+      .coin-stage { justify-content: flex-end; }
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background-image: var(--brand-grad);
+      background-size: 100% 4px;
+      background-repeat: no-repeat;
+      background-position: top;
+      padding-top: 4px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding-top: 1.75rem;
+      padding-bottom: 2.5rem;
+    }
+    .footer-line { color: var(--ink); }
+    .footer-tag { color: var(--silver-deep); }
+    @media (min-width: 760px) {
+      .footer-inner { flex-direction: row; justify-content: space-between; align-items: baseline; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top" aria-label="Lucky Dime Studios, back to top">
+        <img class="brand-logo" src="/brand/lucky-dime-studios-logo.jpg" alt="Lucky Dime Studios">
+      </a>
+      <nav class="masthead-nav mono" aria-label="Sections">
+        <a href="#overlooked">Overlooked</a>
+        <a href="#one-job">One Job</a>
+        <a href="#small-money">Small Money</a>
+        <a href="#launchpad">Launchpad</a>
+      </nav>
+      <span class="masthead-domain mono">luckydimestudios.com</span>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero wrap" aria-labelledby="headline">
+      <p class="kicker mono">
+        <span>An independent product studio</span>
+        <span>No. 10</span>
+      </p>
+      <h1 id="headline">Small, sharp products for overlooked niches.</h1>
+      <div class="hero-grid">
+        <p class="subhead">Every fortune starts with one dime. Lucky Dime Studios places small bets on corners of the internet the big companies walk past. If your problem is too small for them, it is exactly the right size for us.</p>
+        <nav aria-label="Index">
+          <img class="hero-logo" src="/brand/lucky-dime-studios-logo.jpg" alt="The Lucky Dime Studios mark: an L and D monogram with a dime inside the D and a rising chart">
+          <ul class="index-list">
+            <li><a href="#overlooked"><span class="mono">01</span> <span class="index-name">Overlooked</span></a></li>
+            <li><a href="#one-job"><span class="mono">02</span> <span class="index-name">One Job</span></a></li>
+            <li><a href="#small-money"><span class="mono">03</span> <span class="index-name">Small Money</span></a></li>
+            <li><a href="#launchpad"><span class="mono">04</span> <span class="index-name">The Launchpad</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="bucket" id="overlooked" aria-labelledby="overlooked-title">
+      <div class="wrap">
+        <div class="bucket-head">
+          <span class="bucket-no mono">01</span>
+          <h2 class="bucket-title" id="overlooked-title">Overlooked</h2>
+        </div>
+        <p class="bucket-tagline">Your problem is not too small. It is just not their market.</p>
+        <div class="bucket-body">
+          <p class="bucket-copy">Big companies need a million users before they care. We need one real problem. The collector digging through boxes for a single card. The seller getting lowballed on a phone they paid a thousand dollars for. The grower guessing when to feed a backyard tree. That is our market, and it is bigger than they think.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bucket" id="one-job" aria-labelledby="one-job-title">
+      <div class="wrap">
+        <div class="bucket-head">
+          <span class="bucket-no mono">02</span>
+          <h2 class="bucket-title" id="one-job-title">One Job</h2>
+        </div>
+        <p class="bucket-tagline">Every product does one thing, fast.</p>
+        <div class="bucket-body">
+          <p class="bucket-copy">No suites. No forty features you never touch. You show up with a job, the product does it in seconds, and you get back to your day. Anything that does not serve the job does not ship.</p>
+          <article class="flagship">
+            <div class="flagship-meta">
+              <span class="flagship-label mono">Proof, live now</span>
+              <h3 class="flagship-name">Spellstash</h3>
+            </div>
+            <p class="flagship-copy">Find any card anywhere in your stash in 5 seconds. For less than the cost of a booster pack.</p>
+            <div class="flagship-actions">
+              <span class="badge mono"><span class="dot"></span>Live</span>
+              <a class="flagship-link" href="https://spellstash.com">spellstash.com <span class="arrow">&#8599;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bucket" id="small-money" aria-labelledby="small-money-title">
+      <div class="wrap">
+        <div class="bucket-head">
+          <span class="bucket-no mono">03</span>
+          <h2 class="bucket-title" id="small-money-title">Small Money</h2>
+        </div>
+        <p class="bucket-tagline">Small bets for us. Small money for you.</p>
+        <div class="bucket-body">
+          <p class="bucket-copy">The dime is the whole philosophy. We price products under what your hobby spends in a week, and we earn it back by being useful every day. No ads. No reselling your data. No call with a sales team. Small coins, compounding.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="launchpad" id="launchpad" aria-labelledby="launchpad-title">
+      <div class="wrap launchpad-inner">
+        <div>
+          <span class="bucket-no mono">04</span>
+          <h2 id="launchpad-title">The Launchpad</h2>
+          <p class="launchpad-body">New projects go live here first. When one earns its own domain, it graduates. Two projects are on the pad right now.</p>
+          <div class="pads" aria-label="Two projects on the pad">
+            <span class="pad-slot mono"><span class="pad-dot"></span>Pad 01</span>
+            <span class="pad-slot mono"><span class="pad-dot"></span>Pad 02</span>
+          </div>
+        </div>
+        <div class="coin-stage">
+          <button class="coin" id="coin" type="button" aria-label="Flip the dime">
+            <svg viewBox="0 0 120 120" role="img" aria-hidden="true" focusable="false">
+              <defs>
+                <path id="rim-path" d="M 60 60 m -42 0 a 42 42 0 1 1 84 0 a 42 42 0 1 1 -84 0"/>
+                <radialGradient id="face" cx="38%" cy="32%" r="80%">
+                  <stop offset="0%" stop-color="#EBEDF0"/>
+                  <stop offset="60%" stop-color="#D7DBE0"/>
+                  <stop offset="100%" stop-color="#BFC5CD"/>
+                </radialGradient>
+              </defs>
+              <circle cx="60" cy="60" r="57" fill="url(#face)"/>
+              <circle cx="60" cy="60" r="55.5" fill="none" stroke="#868f9b" stroke-width="2.4" stroke-dasharray="2.6 2"/>
+              <circle cx="60" cy="60" r="49" fill="none" stroke="#9aa2ad" stroke-width="0.8"/>
+              <text font-family="IBM Plex Mono, monospace" font-size="7.4" letter-spacing="2.4" fill="#6E7884">
+                <textPath href="#rim-path" startOffset="2%">LUCKY DIME STUDIOS &#183; ONE DIME &#183;</textPath>
+              </text>
+              <text x="60" y="73" font-family="Archivo, sans-serif" font-size="34" font-weight="900" text-anchor="middle" fill="#16171c" letter-spacing="-1">10&#162;</text>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p class="footer-line mono">&#169; 2026 Lucky Dime Studios</p>
+      <p class="footer-tag mono">In luck we trust.</p>
+      <p class="footer-tag mono">Built small. Shipped fast. Compounding.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var coin = document.getElementById('coin');
+      if (!coin) return;
+      coin.addEventListener('click', function () {
+        coin.classList.remove('flip');
+        void coin.offsetWidth;
+        coin.classList.add('flip');
+      });
+      coin.addEventListener('animationend', function (e) {
+        if (e.animationName === 'flipOnce') coin.classList.remove('flip');
+      });
+    })();
+  </script>
+
+</body>
+</html>
