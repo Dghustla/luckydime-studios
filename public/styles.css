@@ -505,6 +505,32 @@ section { position: relative; }
 @media (min-width: 760px) { .pad-grid { grid-template-columns: 1fr 1fr; } }
 
 /* =========================================================
+   FAQ
+   ========================================================= */
+.faq-list { display: grid; gap: 14px; grid-template-columns: 1fr; }
+.faq-item {
+  background: linear-gradient(165deg, var(--panel), rgba(16,10,34,.55));
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 24px;
+}
+.faq-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  color: var(--ink);
+}
+.faq-item h3::before {
+  content: "Q. ";
+  color: var(--teal-bright);
+  font-family: var(--font-mono);
+  font-size: .9em;
+}
+.faq-item p { margin: 0; color: var(--muted); font-size: .99rem; }
+@media (min-width: 820px) { .faq-list { grid-template-columns: 1fr 1fr; gap: 18px; } }
+
+/* =========================================================
    Footer
    ========================================================= */
 .site-foot {
