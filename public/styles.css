@@ -321,7 +321,6 @@ section { position: relative; }
 
 @media (min-width: 920px) {
   .hero { padding: 88px 0 80px; }
-  .hero-grid { grid-template-columns: 1.05fr .95fr; gap: 56px; }
 }
 
 /* =========================================================
